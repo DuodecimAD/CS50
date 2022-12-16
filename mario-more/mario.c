@@ -6,15 +6,16 @@ int main(void)
 {
     int height;
 
-    // get height
-    height = get_int("Height :\n");
-
     do{
+        // get height
+        height = get_int("Height :\n");
 
+        // check if between 1 and 8
         while(height < 1 || height > 8){
             height = get_int("Height :\n");
         }
 
+        // go mario, jump above this and go deliver Peach
         for(int i = 1; i <= height; i++){
             for(int s = height-i; s > 0; s--){
                 printf(" ");
