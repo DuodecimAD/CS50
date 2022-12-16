@@ -16,6 +16,6 @@ int main(void)
         }
         printf("\n");
 
-    }while(height > 1 && height <=8);
+    }while(height == 12);
 
 }
