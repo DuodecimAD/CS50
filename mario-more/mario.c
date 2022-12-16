@@ -9,7 +9,7 @@ int main(void)
 {
     int height;
 
-    do{
+
         // get height
         height = get_int("Height :\n");
 
@@ -33,7 +33,7 @@ int main(void)
             printf("\n");
         }
         printf("\n");
-        break;
-    }while(height >= 1 && height <= 8);
+       
+
 
 }
