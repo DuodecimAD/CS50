@@ -18,7 +18,7 @@ int main(void)
             height = get_int("Height :\n");
         }
 
-        // go mario, jump above this and go deliver Peach
+        // go mario, go, jump above this and go deliver Peach
         for(int i = 1; i <= height; i++){
             for(int s = height-i; s > 0; s--){
                 printf(" ");
