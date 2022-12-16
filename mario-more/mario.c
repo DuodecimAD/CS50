@@ -3,7 +3,7 @@
 
 // I picked mario-more not because i feel more comfortable but because i like challenges
 // Never did any C by the way, i should go watch the 3h video of week 1 now that i'm done
-// It was fun, i wish it was an accomplishement but it's probably a basic exercice ...
+// It was fun, i wish it was an accomplishement but it's probably a basic exercise ...
 
 int main(void)
 {
