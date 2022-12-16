@@ -33,7 +33,7 @@ int main(void)
             printf("\n");
         }
         printf("\n");
-
+        break;
     }while(height >= 1 && height <= 8);
 
 }
