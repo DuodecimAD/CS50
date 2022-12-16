@@ -12,7 +12,7 @@ int main(void)
     do{
 
         if(height < 1 || height > 8){
-            break;
+            height = get_int("Height :\n");
         }
 
         for(int i = 1; i <= height; i++){
