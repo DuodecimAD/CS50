@@ -4,11 +4,12 @@
 int main(void)
 {
     int height;
-    height = get_int("Height :\n");
+
 
     do{
         // get height
-
+        height = get_int("Height :\n");
+        
         for(int i = 1; i <= height; i++){
             for(int s = height-i; s > 0; s--){
                 printf(" ");
