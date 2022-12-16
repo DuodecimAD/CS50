@@ -10,7 +10,10 @@ int main(void)
 
         for(int i = 1; i <= height; i++){
             for(int j = 1; j <= i; j++){
-                printf("#");
+                 for(int s = height-1; s > 0; s--){
+                    printf(" ");
+                 }
+                 printf("#");
             }
             printf("\n");
         }
