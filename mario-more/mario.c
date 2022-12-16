@@ -15,6 +15,10 @@ int main(void)
                  }
                  printf("#");
             }
+            printf("  ");
+            for(int e = 1; e <= i; e++){
+                printf("#");
+            }
             printf("\n");
         }
         printf("\n");
