@@ -9,6 +9,7 @@ int digit1 = 0;
 int digit2 = 0;
 int sum1 = 0;
 int sum2 = 0;
+int total = 0;
 
 int main(void)
 {
@@ -23,28 +24,25 @@ int main(void)
 
     for (int i = 0; i <= length; i+=2)
     {
-        printf("input is : %ld\n", input);
         digit2 = input % 10;
         input = input / 10;
         sum2 = sum2 + digit2;
-
 
         digit1 = input % 10;
         input = input / 10;
         mult = digit1 * 2;
 
-        printf("i is : %d\n", i);
-
         if(mult<10){
             sum1 = sum1 + mult;
         }else{
-              sum1 = sum1 + (mult % 10);
-              mult = mult / 10;
-              sum1 = sum1 + mult;
+            sum1 = sum1 + (mult % 10);
+            mult = mult / 10;
+            sum1 = sum1 + mult;
         }
 
+        total = sum1 + sum2;
+
     }
-    printf("somme is : %d\n",sum1);
-    printf("somme2 is : %d\n",sum2);
+    printf("somme is : %d\n", total);
 
 }
