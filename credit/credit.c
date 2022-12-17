@@ -19,9 +19,9 @@ int main(void)
        length++;
     }
     long a_number[length];
-    a_number = input;
+    a_number[] = input;
 
-    printf("card array is : %d\n", a_number);
+    printf("card array is : %d\n", a_number[]);
 
     for (int i = length-1; i >= 0; i-=2)
     {
