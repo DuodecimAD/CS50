@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int input;
-int length;
+int length = 0;
 int mult = 0;
 int digit = 0;
 int sum1 = 0;
