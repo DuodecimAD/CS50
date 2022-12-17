@@ -38,7 +38,7 @@ int main(void)
 
         mult = digit * 2;
 
-        printf("digit*2 is : %d\n", mult);
+        printf("sum2 is : %d\n", sum2);
 
         if(mult<10){
             sum1 = sum1 + mult;
