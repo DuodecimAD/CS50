@@ -43,6 +43,14 @@ int main(void)
         checksum = sum1 + sum2;
 
     }
+
     printf("somme is : %d\n", checksum);
+
+    if(checksum % 10 == 0){
+          printf("LEGIT");
+    }else{
+        printf("INVALID");
+    }
+
 
 }
