@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-long input;
+long input[];
 int length = 0;
 int mult = 0;
 int digit = 0;
