@@ -24,11 +24,13 @@ int main(void)
 
  //   printf("card array is : %d\n", a_number);
 
-    for (int i = length-1; i >= 0; i--)
+    for (int i = length-1; i >= 0; i-=2)
     {
-        copy = copy / 10;
+        copy1 = copy1 / 10;
         digit = copy1 % 10;
-        mult = a_number[i] * 2;
+        printf("digit is : %d\n",digit);
+
+        mult = digit * 2;
 
         if(mult<10){
             sum1 = sum1 + mult;
@@ -37,7 +39,6 @@ int main(void)
               mult = mult / 10;
               sum1 = sum1 + mult;
         }
-
 
     }
     printf("somme is : %d\n",sum1);
