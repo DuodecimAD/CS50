@@ -10,12 +10,11 @@ int sum1 = 0;
 int main(void)
 {
     input = get_int("credit card number :");
-    length = sizeof(input);
 
     while(input!=0)
    {
        input=input/10;
-       count++;
+       length++;
    }
 
     printf("%d\n", length);
