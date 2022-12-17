@@ -47,9 +47,9 @@ int main(void)
     printf("somme is : %d\n", checksum);
 
     if(checksum % 10 == 0){
-          printf("LEGIT");
+          printf("LEGIT\n");
     }else{
-        printf("INVALID");
+        printf("INVALID\n");
     }
 
 
