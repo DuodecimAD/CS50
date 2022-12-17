@@ -58,18 +58,18 @@ int main(void)
 
     if(checksum % 10 == 0)
     {
-        if(card == 34 || card == 37)
+        if((card == 34 || card == 37) && length == 15)
         {
             printf("AMEX\n");
         }
-        else if(card > 50 && card < 56)
+        else if((card > 50 && card < 56) && length == 16)
         {
             printf("MASTERCARD\n");
         }
         else
         {
             card =  card / 10;
-            if(card == 4 && length){
+            if(card == 4 && (length == 13 || length == 16)){
                 printf("VISA\n");
             }
             else
