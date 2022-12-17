@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int input;
+long input;
 int length = 0;
 int mult = 0;
 int digit = 0;
@@ -17,7 +17,7 @@ int main(void)
        length++;
    }
 
-    printf("%d\n", length);
+    printf("lenghth is : %d\n", length);
 
     for (int i = length-1; i >= 0; i-=2)
     {
@@ -34,6 +34,6 @@ int main(void)
 
 
     }
-    printf("%d",sum1);
+    printf("somme is : %d\n",sum1);
 
 }
