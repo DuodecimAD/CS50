@@ -4,6 +4,7 @@
 long input;
 long copy;
 int length = 0;
+int card = 0;
 int mult = 0;
 int digit1 = 0;
 int digit2 = 0;
@@ -15,6 +16,7 @@ int main(void)
 {
     input = get_long("credit card number :");
     copy = input;
+
     // get length of card number
     while(copy!=0)
     {
@@ -22,6 +24,12 @@ int main(void)
        length++;
     }
 
+    // get which card it is
+    for(z = 0; z < 2; z++){
+        
+    }
+
+    // calculate checksum
     for (int i = 0; i <= length; i+=2)
     {
         digit2 = input % 10;
@@ -45,6 +53,9 @@ int main(void)
     }
 
     printf("somme is : %d\n", checksum);
+
+
+
 
     if(checksum % 10 == 0){
           printf("LEGIT\n");
