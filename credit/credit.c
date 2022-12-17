@@ -29,10 +29,10 @@ int main(void)
         copy1 = copy1 / 10;
         digit = copy1 % 10;
         copy1 = copy1 / 10;
-        printf("digit is : %d\n", digit);
+        //printf("digit is : %d\n", digit);
 
         mult = digit * 2;
-        printf("digit*2 is : %d\n", mult);
+        //printf("digit*2 is : %d\n", mult);
 
         if(mult<10){
             sum1 = sum1 + mult;
