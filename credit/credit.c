@@ -12,7 +12,7 @@ int sum2 = 0;
 int main(void)
 {
     input = get_long("credit card number :");
-    copy1 = input;
+  //  copy1 = input;
 
 
     // get length of card number
@@ -27,14 +27,13 @@ int main(void)
 
     for (int i = length; i >= 0; i-=2)
     {
-        copy1 = copy1 / 10;
-        digit = copy1 % 10;
-        copy1 = copy1 / 10;
-        //printf("digit is : %d\n", digit);
-
         sum2 = sum2 + (input % 10);
         input = input / 10;
+
+        digit = input % 10;
         input = input / 10;
+        //printf("digit is : %d\n", digit);
+
 
         mult = digit * 2;
 
