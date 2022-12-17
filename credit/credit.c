@@ -24,7 +24,7 @@ int main(void)
 
  //   printf("card array is : %d\n", a_number);
 
-    for (int i = length-1; i >= 0; i-=2)
+    for (int i = length; i >= 0; i-=2)
     {
         copy1 = copy1 / 10;
         digit = copy1 % 10;
