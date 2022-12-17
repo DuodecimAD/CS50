@@ -23,7 +23,7 @@ int main(void)
     for (int i = length-1; i >= 0; i-=2)
     {
 
-        mult = i * 2;
+        mult = input[i] * 2;
 
         if(mult<10){
             sum1 = sum1 + mult;
