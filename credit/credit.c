@@ -11,6 +11,7 @@ int main(void)
 {
     input = get_long("credit card number :");
 
+    // get length of card number
     while(input!=0)
    {
        input=input/10;
