@@ -18,8 +18,8 @@ int main(void)
        input=input/10;
        length++;
     }
-    long a_number[length];
-    a_number[] = input;
+    long a_number[length] = input;
+
 
     printf("card array is : %d\n", a_number[]);
 
