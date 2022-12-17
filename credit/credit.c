@@ -3,6 +3,7 @@
 
 int number;
 int mult = 0;
+int digit = 0;
 int sum1 = 0;
 
 int main(void)
@@ -17,9 +18,8 @@ int main(void)
         if(mult<10){
             sum1 = sum + mult;
         }else{
-            for (j = mult; j <= mult.length; j--){
-                mult % 10;
-            }
+              sum1 = sum1 + mult % 10;
+
         }
 
 
