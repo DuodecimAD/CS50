@@ -8,12 +8,12 @@ int main(void)
 {
     number = get_int("credit card number :");
 
-    for (int i = number.length-1; i > 0; i-2)
+    for (int i = number.length-1; i > 0; i-=2)
     {
         if(i<10){
             sum1 = sum + i;
         }else{
-            
+
         }
 
         printf(sum1);
