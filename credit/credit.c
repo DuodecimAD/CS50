@@ -59,9 +59,20 @@ int main(void)
 
 
 
-    if(checksum % 10 == 0){
-        if(card <= )
-    }else{
+    if(checksum % 10 == 0)
+    {
+        if(card == 34 || 37)
+        {
+            printf("AMEX\n");
+        }
+        else if(car > 50 && card < 56)
+        {
+            printf("MASTERCARD\n");
+        }
+        else if
+    }
+    else
+    {
         printf("INVALID\n");
     }
 
