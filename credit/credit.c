@@ -56,25 +56,31 @@ int main(void)
 
     // printf("somme is : %d\n", checksum);
 
-
-
-
     if(checksum % 10 == 0)
     {
-        if(card == 34 || 37)
+        if(card == 34 || card == 37)
         {
             printf("AMEX\n");
         }
-        else if(car > 50 && card < 56)
+        else if(card > 50 && card < 56)
         {
             printf("MASTERCARD\n");
         }
-        else if
+        else
+        {
+            card =  card / 10;
+            if(card == 4){
+                printf("VISA\n");
+            }
+            else
+            {
+                printf("INVALID\n");
+            }
+        }
     }
     else
     {
         printf("INVALID\n");
     }
-
 
 }
