@@ -3,8 +3,8 @@
 
 long input;
 long copy;
+long card;
 int length = 0;
-int card = 0;
 int mult = 0;
 int digit1 = 0;
 int digit2 = 0;
@@ -28,6 +28,7 @@ int main(void)
     // get which card it is
     for(int z = 0; z < length-2; z++){
         card = card / 10;
+        printf("card is : %ld\n", card);
     }
 
 
@@ -53,7 +54,7 @@ int main(void)
         checksum = sum1 + sum2;
 
     }
-    
+
     printf("somme is : %d\n", checksum);
 
 
