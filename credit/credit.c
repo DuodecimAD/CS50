@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 long input;
-
+long copy;
 int length = 0;
 int mult = 0;
 int digit1 = 0;
@@ -13,11 +13,11 @@ int sum2 = 0;
 int main(void)
 {
     input = get_long("credit card number :");
-
+    copy = input;
     // get length of card number
-    while(input!=0)
+    while(copy!=0)
     {
-       input=input/10;
+       copy=copy/10;
        length++;
     }
 
