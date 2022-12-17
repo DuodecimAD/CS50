@@ -18,7 +18,7 @@ int main(void)
        length++;
    }
 
-    printf("lenghth is : %d\n", length);
+    // printf("lenghth is : %d\n", length);
 
     for (int i = length-1; i >= 0; i-=2)
     {
