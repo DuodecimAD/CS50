@@ -19,7 +19,7 @@ int main(void)
             sum1 = sum + mult;
         }else{
               sum1 = sum1 + mult % 10;
-
+              sum1 = sum1 + mult % 10;
         }
 
 
