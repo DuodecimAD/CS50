@@ -28,6 +28,7 @@ int main(void)
     {
         copy1 = copy1 / 10;
         digit = copy1 % 10;
+        copy1 = copy1 / 10;
         printf("digit is : %d\n",digit);
 
         mult = digit * 2;
