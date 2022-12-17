@@ -12,11 +12,11 @@ int main(void)
     input = get_int("credit card number :");
     length = sizeof(input);
 
-    while(n!=0)
+    while(input!=0)
    {
-       n=n/10;
+       input=input/10;
        count++;
-   } 
+   }
 
     printf("%d\n", length);
 
