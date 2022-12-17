@@ -21,7 +21,7 @@ int main(void)
        length++;
     }
 
-    for (int i = 0; i <= length; i++)
+    for (int i = 0; i <= length; i+=2)
     {
         printf("input is : %ld\n", input);
         digit2 = input % 10;
