@@ -9,7 +9,7 @@ int digit1 = 0;
 int digit2 = 0;
 int sum1 = 0;
 int sum2 = 0;
-int total = 0;
+int checksum = 0;
 
 int main(void)
 {
@@ -40,9 +40,9 @@ int main(void)
             sum1 = sum1 + mult;
         }
 
-        total = sum1 + sum2;
+        checksum = sum1 + sum2;
 
     }
-    printf("somme is : %d\n", total);
+    printf("somme is : %d\n", checksum);
 
 }
