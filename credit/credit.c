@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 long input;
+long a_number[];
 int length = 0;
 int mult = 0;
 int digit = 0;
@@ -18,10 +19,10 @@ int main(void)
        input=input/10;
        length++;
     }
-    long a_number[length] = input;
+    a_number[length] = input;
 
 
-    printf("card array is : %d\n", a_number[]);
+    printf("card array is : %d\n", a_number);
 
     for (int i = length-1; i >= 0; i-=2)
     {
