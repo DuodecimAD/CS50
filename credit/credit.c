@@ -12,14 +12,14 @@ int main(void)
     for (int i = number.length-1; i >= 0; i-=2)
     {
 
-    }
+        mult = i * 2;
 
-    for (int j = number.length-1; j >= 0; j-=2)
-    {
-        if(i<10){
-            sum1 = sum + i;
+        if(mult<10){
+            sum1 = sum + mult;
         }else{
-            i
+            for (j = mult; j <= mult.length; j--){
+                mult % 10;
+            }
         }
 
 
