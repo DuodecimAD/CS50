@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-char input[];
+int input;
 int length = 0;
 int mult = 0;
 int digit = 0;
@@ -9,9 +9,7 @@ int sum1 = 0;
 
 int main(void)
 {
-    input[] = get_int("credit card number :");
-
-    printf("number is : %d\n", input[]);
+    input = get_long("credit card number :");
 
     while(input!=0)
    {
