@@ -12,7 +12,7 @@ int main(void)
     input = get_int("credit card number :");
     length = sizeof(input);
 
-    printf("%s\n", length);
+    printf("%d\n", length);
 
     for (int i = length-1; i >= 0; i-=2)
     {
@@ -20,7 +20,7 @@ int main(void)
         mult = i * 2;
 
         if(mult<10){
-            sum1 = sum + mult;
+            sum1 = sum1 + mult;
         }else{
               sum1 = sum1 + mult % 10;
               mult = mult / 10;
@@ -29,6 +29,6 @@ int main(void)
 
 
     }
-    printf("%i",sum1);
+    printf("%d",sum1);
 
 }
