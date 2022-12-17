@@ -12,7 +12,7 @@ int main(void)
     input = get_int("credit card number :");
     length = sizeof(input);
 
-    printf("/i\n", length);
+    printf("/s\n", length);
 
     for (int i = length-1; i >= 0; i-=2)
     {
