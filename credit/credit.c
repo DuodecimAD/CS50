@@ -28,7 +28,6 @@ int main(void)
     // get which card it is
     for(int z = 0; z < length-2; z++){
         card = card / 10;
-        printf("card is : %ld\n", card);
     }
 
 
@@ -55,13 +54,13 @@ int main(void)
 
     }
 
-    printf("somme is : %d\n", checksum);
+    // printf("somme is : %d\n", checksum);
 
 
 
 
     if(checksum % 10 == 0){
-          printf("LEGIT\n");
+        if()
     }else{
         printf("INVALID\n");
     }
