@@ -21,19 +21,19 @@ int main(void)
        length++;
     }
 
-    for (int i = 0; i <= 1; i++)
+    for (int i = 0; i <= length; i++)
     {
         printf("input is : %ld\n", input);
         digit2 = input % 10;
         input = input / 10;
         sum2 = sum2 + digit2;
-        printf("input is : %ld\n", input);
+
 
         digit1 = input % 10;
         input = input / 10;
         mult = digit1 * 2;
-        printf("input is : %ld\n", input);
-        printf("sum2 is : %d\n", sum2);
+
+        printf("i is : %d\n", i);
 
         if(mult<10){
             sum1 = sum1 + mult;
