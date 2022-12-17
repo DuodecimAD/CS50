@@ -69,7 +69,7 @@ int main(void)
         else
         {
             card =  card / 10;
-            if(card == 4){
+            if(card == 4 && length){
                 printf("VISA\n");
             }
             else
