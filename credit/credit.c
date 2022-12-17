@@ -60,7 +60,7 @@ int main(void)
 
 
     if(checksum % 10 == 0){
-        if()
+        if(card <= )
     }else{
         printf("INVALID\n");
     }
