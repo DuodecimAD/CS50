@@ -7,6 +7,7 @@ int length = 0;
 int mult = 0;
 int digit = 0;
 int sum1 = 0;
+int sum2 = 0;
 
 int main(void)
 {
@@ -31,8 +32,13 @@ int main(void)
         copy1 = copy1 / 10;
         //printf("digit is : %d\n", digit);
 
+        sum2 = sum2 + (input % 10);
+        input = input / 10;
+        input = input / 10;
+
         mult = digit * 2;
-        //printf("digit*2 is : %d\n", mult);
+
+        printf("digit*2 is : %d\n", mult);
 
         if(mult<10){
             sum1 = sum1 + mult;
