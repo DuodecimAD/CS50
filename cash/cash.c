@@ -37,7 +37,11 @@ int main(void)
 
 int get_cents(void)
 {
+    do
+    {
     int input = get_int("Change owed : ");
+    }
+    while (input >= 0)
     return input;
 }
 
