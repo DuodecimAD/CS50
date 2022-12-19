@@ -49,8 +49,6 @@ int compute_score(string word)
         {
             score = score + POINTS[letter];
         }
-
     }
-
     return score;
 }
