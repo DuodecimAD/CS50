@@ -47,7 +47,7 @@ int compute_score(string word)
     {
         upper = word[i];
         toupper(upper);
-        letter = word[i] - 65;
+        letter = upper - 65;
 
         if(letter <= 25 && letter >= 0){
             score = score + POINT[letter];
