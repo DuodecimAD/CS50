@@ -40,7 +40,7 @@ int compute_score(string word)
     int score = 0;
     int letter;
 
-    string upper_word = isupper(word);
+    string upper_word = toupper(word);
 
     for(int i = 0; i < strlen(word); i++)
     {
