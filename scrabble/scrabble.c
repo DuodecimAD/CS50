@@ -26,6 +26,13 @@ int compute_score(string word)
     // TODO: Compute and return score for string
     int score;
 
+    string upper_word = isupper(word);
+
+    for(int i = 0; i < strlen(word); i++)
+    {
+        int letter_score;
+        score = score +
+    }
     score
 
     return score;
