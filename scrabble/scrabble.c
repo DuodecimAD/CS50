@@ -24,7 +24,7 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    int score;
+    int score = 0;
     int letter;
 
     string upper_word = isupper(word);
@@ -32,10 +32,9 @@ int compute_score(string word)
     for(int i = 0; i < strlen(word); i++)
     {
         letter = word[i] - 65;
-        
-        score = score +
+
+        score = score + POINT[letter];
     }
-    score
 
     return score;
 }
