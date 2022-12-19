@@ -46,11 +46,11 @@ int compute_score(string word)
     for(int i = 0; i < strlen(word); i++)
     {
         upper = word[i];
-        toupper(upper);
+        upper = toupper(upper);
         letter = upper - 65;
 
         if(letter <= 25 && letter >= 0){
-            score = score + POINT[letter];
+            score = score + POINTS[letter];
         }
 
     }
