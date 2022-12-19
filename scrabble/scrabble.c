@@ -38,13 +38,15 @@ int compute_score(string word)
 {
     // TODO: Compute and return score for string
     int score = 0;
+    int upper;
     int letter;
 
 
 
     for(int i = 0; i < strlen(word); i++)
     {
-        toupper(char word[i]);
+        upper = word[i];
+        toupper(upper);
         letter = word[i] - 65;
 
         if(letter <= 25 && letter >= 0){
