@@ -4,7 +4,10 @@
 
 int main(int argc, string argv[])
 {
-    argc = 1;
+    if(argc > 1){
+
+        return printf("Usage: ./caesar key\n")
+    }
     int key = argv[1];
 
     if(isdigit(key))
