@@ -50,5 +50,5 @@ int count_words(string text)
         }
 
     }
-    return j;
+    return j + 1;
 }
