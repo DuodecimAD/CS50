@@ -24,6 +24,9 @@ int main(void)
     int sentences = count_sentences(input);
     printf("sentences : %i\n", sentences);
 
+    int index = (0.0588 * (letters / 100)) - (0.296 * (sentences / 100)) - 15.8;
+    printf("Grade %i\n", index);
+
 
 }
 
