@@ -16,17 +16,18 @@ int main(void)
     printf("Text: %s\n", input);
 
     int letters = count_letters(input);
-  //  printf("letters : %i\n", letters);
+    // printf("letters : %i\n", letters);
 
     int words = count_words(input);
-  //  printf("words : %i\n", words);
+    // printf("words : %i\n", words);
 
     int sentences = count_sentences(input);
- //   printf("sentences : %i\n", sentences);
+    // printf("sentences : %i\n", sentences);
 
-    int index = round((0.0588 * (((float) letters / (float) words) * 100)) - (0.296 * (((float) sentences / (float) words) * 100)) - 15.8);
+    int index = round((0.0588 * (((float) letters / (float) words) * 100)) - (0.296 * (((float) sentences /
+                      (float) words) * 100)) - 15.8);
 
-    if(index < 1)
+    if (index < 1)
     {
         printf("Before Grade 1\n");
     }
@@ -48,7 +49,7 @@ int count_letters(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(isalpha(text[i]))
+        if (isalpha(text[i]))
         {
             j++;
         }
@@ -63,7 +64,7 @@ int count_words(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(isspace(text[i]))
+        if (isspace(text[i]))
         {
             j++;
         }
@@ -78,7 +79,7 @@ int count_sentences(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(text[i] == 33 || text[i] == 46 || text[i] == 63)
+        if (text[i] == 33 || text[i] == 46 || text[i] == 63)
         {
             j++;
         }
