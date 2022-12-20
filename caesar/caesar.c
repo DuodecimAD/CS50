@@ -24,7 +24,7 @@ int main(int argc, string argv[])
         return 0;
     }
 
-    if(isdigit(key))
+    if (isdigit(key))
     {
         string input = get_string("plaintext: \n");
 
