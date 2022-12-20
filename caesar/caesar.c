@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#inculde <ctype.h>
 
 int main(int argc, string argv[])
 {
@@ -7,5 +8,11 @@ int main(int argc, string argv[])
 
     string input = get_string("plaintext: \n");
 
-    for (int i = )
+    for (int i = 0; i < strlen(input); i++)
+    {
+        if (isalpha(input) && islower(input))
+        {
+            
+        }
+    }
 }
