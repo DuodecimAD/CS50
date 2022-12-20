@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <ctype.h>
 
+int only_digits(int check);
+
 int main(int argc, string argv[])
 {
     if(argc > 1){
@@ -9,8 +11,10 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar key\n");
         return 1;
     }
-    
-    int key = argv[1];
+
+    bool check = only_digits(argv[1]);
+
+    if (check)
 
     if(isdigit(key))
     {
@@ -25,6 +29,16 @@ int main(int argc, string argv[])
 
     }
 
-
+int only_digits(string arg)
+{
+    if(isdigit(arg))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
 }
