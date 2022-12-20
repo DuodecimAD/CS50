@@ -7,7 +7,7 @@
 
 int count_letters(string text);
 int count_words(string text);
-int count_sentences(string text)
+int count_sentences(string text);
 
 
 int main(void)
@@ -63,11 +63,11 @@ int count_sentences(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(isspace(text[i]))
+        if(text[i] == 33 || text[i] == 46 || text[i] == 63)
         {
             j++;
         }
 
     }
-    return j + 1;
+    return j;
 }
