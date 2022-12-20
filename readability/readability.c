@@ -19,11 +19,12 @@ int main(void)
 
 int count_letters(string text)
 {
-    int
+    int j = 0;
 
     for (int i = 0; i < strlen(text); i++)
     {
-        text[] = text
+        if(isspace(text[i])
+
     }
 
 }
