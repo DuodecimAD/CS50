@@ -40,15 +40,15 @@ int count_letters(string text)
 
 int count_words(string text)
 {
-    int j = 0;
+    int w = 0;
 
     for (int i = 0; i < strlen(text); i++)
     {
         if(isspace(text[i]))
         {
-            j++;
+            w++;
         }
 
     }
-    return j;
+    return w;
 }
