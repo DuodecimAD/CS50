@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
+#include <math.h>
 
 
 int count_letters(string text);
@@ -16,16 +16,28 @@ int main(void)
     printf("Text: %s\n", input);
 
     int letters = count_letters(input);
-    printf("letters : %i\n", letters);
+  //  printf("letters : %i\n", letters);
 
     int words = count_words(input);
-    printf("words : %i\n", words);
+  //  printf("words : %i\n", words);
 
     int sentences = count_sentences(input);
-    printf("sentences : %i\n", sentences);
+ //   printf("sentences : %i\n", sentences);
 
-    int index = (0.0588 * (((float) letters / (float) words) * 100)) - (0.296 * (((float) sentences / (float) words) * 100)) - 15.8;
-    printf("Grade %d\n", index);
+    int index = round((0.0588 * (((float) letters / (float) words) * 100)) - (0.296 * (((float) sentences / (float) words) * 100)) - 15.8);
+
+    if(index < 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    else if (index >= 16)
+    {
+        printf("Grade 16+\n");
+    }
+    else
+    {
+        printf("Grade %i\n", index);
+    }
 
 
 }
