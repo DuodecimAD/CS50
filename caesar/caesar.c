@@ -43,17 +43,13 @@ bool only_digits(string arg)
 
     for (int i = 0; i < strlen(arg); i++)
     {
-        number = isdigit(arg[i]);
+        if (!isdigit(arg[i]))
+        {
+            return false;
+        }
     }
-
-    if()
-    {
         return true;
-    }
-    else
-    {
-        return false;
-    }
+
 }
 
 }
