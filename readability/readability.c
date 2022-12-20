@@ -25,6 +25,7 @@ int main(void)
     // printf("sentences : %i\n", sentences);
 
     int index = round((0.0588 * (((float) letters / (float) words) * 100)) - (0.296 * (((float) sentences /
+
                       (float) words) * 100)) - 15.8);
 
     if (index < 1)
