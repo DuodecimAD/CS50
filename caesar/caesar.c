@@ -12,7 +12,7 @@ int main(int argc, string argv[])
     {
         if (isalpha(input) && islower(input))
         {
-            
+            input[i] = input[i] - 
         }
     }
 }
