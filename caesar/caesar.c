@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 bool only_digits(string check);
 
@@ -21,16 +22,13 @@ int main(int argc, string argv[])
     }
     else
     {
-        return 0;
-    }
 
-    if (isdigit(key))
-    {
         string input = get_string("plaintext: \n");
 
         for (int i = 0; i < strlen(input); i++)
         {
-            input[i] = (input[i] + key) % 26;
+            input[i] = (input[i] + argv[1]) % 26;
+
         }
 
         printf("ciphertext: %s\n", input);
