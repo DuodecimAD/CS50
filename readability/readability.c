@@ -7,6 +7,7 @@
 
 int count_letters(string text);
 int count_words(string text);
+int count_sentences(string text)
 
 
 int main(void)
@@ -19,6 +20,9 @@ int main(void)
 
     int words = count_words(input);
     printf("words : %i\n", words);
+
+    int sentences = count_words(input);
+    printf("sentences : %i\n", sentences);
 
 
 }
@@ -39,6 +43,21 @@ int count_letters(string text)
 }
 
 int count_words(string text)
+{
+    int j = 0;
+
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if(isspace(text[i]))
+        {
+            j++;
+        }
+
+    }
+    return j + 1;
+}
+
+int count_sentences(string text)
 {
     int j = 0;
 
