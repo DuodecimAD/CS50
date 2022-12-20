@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 string input;
 
@@ -23,9 +24,9 @@ int count_letters(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(!isspace(text[i])
+        if(!isspace(text[i]))
         {
-            j++
+            j++;
         }
 
     }
