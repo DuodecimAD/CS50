@@ -6,8 +6,10 @@ int main(int argc, string argv[])
 {
     if(argc > 1){
 
-        return printf("Usage: ./caesar key\n")
+        printf("Usage: ./caesar key\n");
+        return 1;
     }
+    
     int key = argv[1];
 
     if(isdigit(key))
