@@ -18,7 +18,7 @@ int main(void)
     printf("letters : %i\n", letters);
 
     int words = count_words(input);
-    printf("words : %i\n", letters);
+    printf("words : %i\n", words);
 
 
 }
@@ -40,15 +40,15 @@ int count_letters(string text)
 
 int count_words(string text)
 {
-    int w = 0;
+    int j = 0;
 
     for (int i = 0; i < strlen(text); i++)
     {
         if(isspace(text[i]))
         {
-            w++;
+            j++;
         }
 
     }
-    return w;
+    return j;
 }
