@@ -8,15 +8,12 @@ bool only_digits(string check);
 
 int main(int argc, string argv[])
 {
-    if(!argc || argc > 2){
+    if(argc || argc > 2){
 
         printf("Usage: ./caesar key\n");
         return 1;
     }
-    else
-    {
-        return 0;
-    }
+
 
 
 
