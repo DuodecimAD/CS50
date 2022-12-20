@@ -2,11 +2,24 @@
 #include <stdio.h>
 #include <string.h>
 
+string input;
+
+int count_letters(string text);
+
 
 int main(void)
 {
-    string text = get_string("Text: ");
-    printf("Text: %s\n", text);
-    int letters = strlen(text);
-    printf("%i\n", letters);
+    input = get_string("Text: ");
+    printf("Text: %s\n", input);
+
+    int letters = count_letters(input);
+    printf("letters : %i\n", letters);
+
+}
+
+int count_letters(string text)
+{
+    return strlen(text);
+
+
 }
