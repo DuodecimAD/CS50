@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(int argc, string argv[1])
+int main(int argc, string argv[])
 {
+    argc = 1;
     int key = argv[1];
 
     if(isdigit(key))
