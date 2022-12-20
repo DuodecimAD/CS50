@@ -31,17 +31,17 @@ int main(int argc, string argv[])
         {
             if(isalpha(input[i]) && islower(input[i]))
             {
-               input[i] = ((input[i] - 97) + key) % 26;
+               input[i] = (((input[i] - 97) + key) % 26) + 97;
             }
             else if(isalpha(input[i]) && isupper(input[i]))
             {
-                input[i] = ((input[i] - 65) + key) % 26;
+                input[i] = (((input[i] - 65) + key) % 26) + 65;
             }
 
 
         }
 
-        printf("ciphertext: %s", input);
+        printf("ciphertext: %s\n", input);
 
     }
 
