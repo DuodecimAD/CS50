@@ -5,4 +5,6 @@
 int main(void)
 {
     string text = get_string("Text: ");
+    printf("%s\n", text);
+    printf("%s\n", strlen(string text));
 }
