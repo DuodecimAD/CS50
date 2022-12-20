@@ -29,7 +29,11 @@ int main(int argc, string argv[])
 
         for (int i = 0; i < strlen(input); i++)
         {
-            input[i] = (input[i] + key) % 26;
+            if(isalpha(input[i]) && islower(input[i]))
+            {
+               input[i] = ((input[i] - 65) + key) % 26;
+            }
+
 
         }
 
