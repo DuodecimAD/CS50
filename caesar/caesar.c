@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int only_digits(int check);
+bool only_digits(string check);
 
 int main(int argc, string argv[])
 {
