@@ -25,10 +25,11 @@ int main(int argc, string argv[])
     {
 
         string input = get_string("plaintext: \n");
+        int key = atoi(argv[1]);
 
         for (int i = 0; i < strlen(input); i++)
         {
-            input[i] = (input[i] + argv[1]) % 26;
+            input[i] = (input[i] + key) % 26;
 
         }
 
@@ -36,13 +37,13 @@ int main(int argc, string argv[])
 
     }
 
-bool only_digits(string arg)
+bool only_digits(string s)
 {
     int number;
 
     for (int i = 0; i < strlen(arg); i++)
     {
-        if (!isdigit(arg[i]))
+        if (!isdigit(s[i]))
         {
             return false;
         }
