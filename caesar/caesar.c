@@ -24,7 +24,7 @@ int main(int argc, string argv[])
     else
     {
 
-        string input = get_string("plaintext: \n");
+        string input = get_string("plaintext: ");
         int key = atoi(argv[1]);
 
         for (int i = 0; i < strlen(input); i++)
@@ -33,7 +33,7 @@ int main(int argc, string argv[])
 
         }
 
-        printf("ciphertext: %s\n", input);
+        printf("ciphertext: %s", input);
 
     }
 
