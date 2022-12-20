@@ -21,7 +21,7 @@ int main(void)
     int words = count_words(input);
     printf("words : %i\n", words);
 
-    int sentences = count_words(input);
+    int sentences = count_sentences(input);
     printf("sentences : %i\n", sentences);
 
 
