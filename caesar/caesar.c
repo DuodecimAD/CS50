@@ -37,7 +37,7 @@ int main(int argc, string argv[])
 
     }
 
-int only_digits(string arg)
+bool only_digits(string arg)
 {
     if(isdigit(arg))
     {
