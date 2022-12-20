@@ -6,7 +6,7 @@
 int main(void)
 {
     string text = get_string("Text: ");
-    printf("%s\n", text);
+    printf("Text: %s\n", text);
     int letters = strlen(text);
     printf("%i\n", letters);
 }
