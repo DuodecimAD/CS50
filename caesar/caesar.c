@@ -18,7 +18,7 @@ int main(int argc, string argv[])
 
     if (!check)
     {
-        printf("Usage: ./caesar key\n");
+        printf("Usage: ./caesar key2\n");
         return 1;
     }
     else
