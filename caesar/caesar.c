@@ -5,5 +5,7 @@ int main(int argc, string argv[])
 {
     int key = argv[];
 
-    for 
+    string input = get_string("plaintext: \n");
+
+    for (int i = )
 }
