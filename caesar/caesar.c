@@ -1,10 +1,14 @@
 #include <cs50.h>
 #include <stdio.h>
-
+#include <ctype.h>
 
 int main(int argc, string argv[])
 {
-    int key = argv;
+    if(isdigit(argv))
+    {
+        int key = argv;
+    }
+    
 
     string input = get_string("plaintext: \n");
 
