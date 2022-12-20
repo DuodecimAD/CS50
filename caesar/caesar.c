@@ -15,7 +15,8 @@ int main(int argc, string argv[])
     }
 
 
-    if (only_digits(argv[1]) || argv[1])
+
+    if (!only_digits(argv[1]) || !argv[1])
     {
         printf("Usage: ./caesar key2\n");
         return 1;
