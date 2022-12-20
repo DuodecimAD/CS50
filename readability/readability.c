@@ -30,5 +30,5 @@ int count_letters(string text)
         }
 
     }
-    return strlen(text) - j;
+    return j;
 }
