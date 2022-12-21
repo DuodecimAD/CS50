@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <ctype.h>
 
 // Hello CS50
 
 int main(void)
 {
-    string name = get_string("what is your name : \n");
+    string name = "antony";
+    toupper(name);
     printf("hello, %s\n", name);
 }
