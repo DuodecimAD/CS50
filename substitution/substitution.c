@@ -10,6 +10,9 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    printf("%c\n", argv[1][0]);
+    printf("plaintext: %c", argv[1][0]);
+
+
+    printf("ciphertext: %c", argv[1][0]);
 
 }
