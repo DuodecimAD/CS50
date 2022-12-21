@@ -14,7 +14,7 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
-    else if (strlen(argv[1]) != 26 || !isalpha(argv[1]))
+    else if (strlen(argv[1]) != 26)
     {
         printf("Key must contain 26 alphabetical characters.\n");
         return 1;
@@ -65,6 +65,10 @@ int main(int argc, string argv[])
                 cipher[i] = key[a];
             }
         }
+        else(
+            printf("Key must contain 26 alphabetical characters.\n");
+            return 1;
+        )
     }
 
 
