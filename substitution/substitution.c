@@ -26,7 +26,11 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < 26; i++)
     {
-        cipher[i] = key[i];
+        if (isalpha(input[i]) && islower(input[i]))
+        {
+            cipher[i] = ((cipher[i] - 97) % 26) + key[i];
+            
+        }
     }
     printf("plaintext: %i\n", key);
 
