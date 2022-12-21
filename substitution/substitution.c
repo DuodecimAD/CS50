@@ -2,18 +2,21 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 
 int toascii(int c);
 
 int main(int argc, string argv[])
 {
 
+    int length = strln(argv[1])
+
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
         return 1;
     }
-    else if (strln(argv[1]) != 26)
+    else if (length != 26)
     {
         printf("Key must contain 26 characters.\n");
     }
