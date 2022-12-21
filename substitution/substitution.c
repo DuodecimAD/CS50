@@ -35,7 +35,7 @@ int main(int argc, string argv[])
         {
             cipher[i] = ((cipher[i] - 65) % 26;
             key[i] = (key[i] - 65) % 26;
-            cipher[i] = 
+            cipher[i] = key[i] + 65;
         }
     }
     printf("plaintext: %i\n", key);
