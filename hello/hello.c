@@ -7,12 +7,8 @@
 int main(void)
 {
     string name = "antony";
-    char final;
+    char final = toupper(name);
 
-    for(int i = 0; i<6; i++)
-    {
-       final[i] = toupper(name[i]);
-    }
 
     printf("%s\n", final);
 }
