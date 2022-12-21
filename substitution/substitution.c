@@ -37,7 +37,7 @@ int main(int argc, string argv[])
             cipher[i] = key[a];
         }
     }
-    printf("ciphertext: %i\n", cipher);
+    printf("ciphertext: %s\n", cipher);
 
 /*
 
