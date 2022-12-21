@@ -23,7 +23,7 @@ int main(int argc, string argv[])
 
     string input = get_string("plaintext: ");
     int cipher = toascii(input);
-
+    int a;
     for (int i = 0; i < 26; i++)
     {
         if (isalpha(input[i]) && islower(input[i]))
@@ -33,7 +33,7 @@ int main(int argc, string argv[])
         }
         else if (isalpha(input[i]) && isupper(input[i]))
         {
-            cipher[i] = ((cipher[i] - 65) % 26;
+            a = (cipher[i] - 65) % 26;
             key[i] = (key[i] - 65) % 26;
             cipher[i] = key[i] + 65;
         }
