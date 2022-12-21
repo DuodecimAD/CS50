@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <ctype.h>
 
 int main(int argc, string argv[])
 {
@@ -16,8 +17,6 @@ int main(int argc, string argv[])
 
   //  printf("plaintext: %c", argv[1][0]);
 
-
-        int key = atoi(argv[1]);
 
         for (int i = 0; i < strlen(input); i++)
         {
