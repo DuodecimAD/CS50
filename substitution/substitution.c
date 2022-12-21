@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 int toascii(int c);
+int strlen(string s);
 
 int main(int argc, string argv[])
 {
