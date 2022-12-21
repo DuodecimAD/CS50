@@ -18,7 +18,7 @@ int main(int argc, string argv[])
         printf("Key must contain 26 characters.\n");
     }
 
-
+    toupper(argv[1]);
     int key = toascii(argv[1]);
 
     string input = get_string("plaintext: ");
@@ -28,8 +28,11 @@ int main(int argc, string argv[])
     {
         if (isalpha(input[i]) && islower(input[i]))
         {
-            cipher[i] = ((cipher[i] - 97) % 26) + key[i];
-            
+            cipher[i] = (((cipher[i] - 97) % 26) + ((key[i] - 65) % 26)) + 97;
+        }
+        else if (isalpha(input[i]) && isupper(input[i]))
+        {
+            cipher[i] = (((cipher[i] - 65) % 26) + ((key[i] - 65) % 26)) + 65;
         }
     }
     printf("plaintext: %i\n", key);
