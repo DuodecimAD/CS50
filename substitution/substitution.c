@@ -4,7 +4,7 @@
 int main(int argc, string argv[])
 {
 
-    string input =  argv[1];
-    printf("%c\n", input[0]);
+
+    printf("%c\n", argv[1][0]);
 
 }
