@@ -6,9 +6,9 @@
 
 int main(void)
 {
-    string name = "antony";
-    char final = toupper(name);
+    char name[] = "antony";
+    name = toupper(name);
 
 
-    printf("%s\n", final);
+    printf("%s\n", name);
 }
