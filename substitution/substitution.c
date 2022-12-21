@@ -44,12 +44,27 @@ int main(int argc, string argv[])
         if (isalpha(input[i]) && islower(input[i]))
         {
             a = (cipher[i] - 97) % 26;
-             cipher[i] = key[a] + 32;
+            if (islower(key[a]))
+            {
+                cipher[i] = key[a];
+            }
+            else
+            {
+                cipher[i] = key[a] + 32;
+            }
+
         }
         else if (isalpha(input[i]) && isupper(input[i]))
         {
             a = (cipher[i] - 65) % 26;
-            cipher[i] = key[a];
+            if (islower(key[a]))
+            {
+                cipher[i] = key[a] - 32;
+            }
+            else
+            {
+                cipher[i] = key[a];
+            }
         }
     }
 
