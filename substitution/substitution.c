@@ -34,11 +34,10 @@ int main(int argc, string argv[])
         else if (isalpha(input[i]) && isupper(input[i]))
         {
             a = (cipher[i] - 65) % 26;
-            key[i] = (key[i] - 65) % 26;
-            cipher[i] = key[i] + 65;
+            cipher[i] = key[a];
         }
     }
-    printf("plaintext: %i\n", key);
+    printf("ciphertext: %i\n", cipher);
 
 /*
 
