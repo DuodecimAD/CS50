@@ -25,7 +25,8 @@ int main(int argc, string argv[])
     string input = get_string("plaintext: ");
 
     char key[26];
-    string cipher;
+    int input_length = strlen(input);
+    char cipher[input_length];
 
     for (int j = 0; j < 26; j++)
     {
