@@ -28,11 +28,13 @@ int main(int argc, string argv[])
     {
         if (isalpha(input[i]) && islower(input[i]))
         {
-            cipher[i] = (((cipher[i] - 97) % 26) + ((key[i] - 65) % 26)) + 97;
+            cipher[i] = (((cipher[i] - 97) % 26)
+            key[i] = ((key[i] - 65) % 26)) + 97;
         }
         else if (isalpha(input[i]) && isupper(input[i]))
         {
-            cipher[i] = (((cipher[i] - 65) % 26) + ((key[i] - 65) % 26)) + 65;
+            cipher[i] = (((cipher[i] - 65) % 26)
+            key[i] = ((key[i] - 65) % 26)) + 65;
         }
     }
     printf("plaintext: %i\n", key);
