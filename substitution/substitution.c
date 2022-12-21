@@ -32,10 +32,11 @@ int main(int argc, string argv[])
     {
         key[j] = toupper(argv[1][j]);
         key[j] = toascii(key[j]);
-        cipher[j] = toascii(input[j]);
     }
-
-
+    for (int u = 0; u < input_length; u++)
+    {
+        cipher[u] = toascii(input[u]);
+    }
 
 
     int a;
