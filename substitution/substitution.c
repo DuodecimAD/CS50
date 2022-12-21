@@ -53,8 +53,8 @@ int main(int argc, string argv[])
         }
     }
 
-    int last = input_length + 1;
-    cipher[last] = '\0';
+
+    cipher[input_length] = '\0';
 
     printf("ciphertext: %s\n", cipher);
 
