@@ -21,8 +21,8 @@ int main(int argc, string argv[])
         printf("Key must contain 26 characters.\n");
     }
 
-    toupper(argv[1]);
-    int key = toascii(argv[1]);
+    int key = toupper(argv[1]);
+    key = toascii(argv[1]);
 
     string input = get_string("plaintext: ");
     int cipher = toascii(input);
