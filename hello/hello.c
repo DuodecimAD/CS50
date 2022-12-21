@@ -7,7 +7,7 @@
 int main(void)
 {
     string name = "antony";
-    char final[6];
+    char final;
 
     for(int i = 0; i<6; i++)
     {
