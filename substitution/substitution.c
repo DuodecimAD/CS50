@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 int toascii(int c);
 
@@ -12,13 +13,22 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
+    else if (strln(argv[1]) != 26)
+    {
+        printf("Key must contain 26 characters.\n");
+    }
 
 
+    int key = toascii(argv[1]);
 
-  //  string input = get_string("plaintext: ");
+    string input = get_string("plaintext: ");
+    int cipher = toascii(input);
 
-    int key = toascii(argv[1][0]);
-   printf("plaintext: %i", key);
+    for (int i = 0; i < 26; i++)
+    {
+        cipher[i] = key[i];
+    }
+    printf("plaintext: %i\n", key);
 
 /*
 
