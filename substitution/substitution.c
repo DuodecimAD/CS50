@@ -56,20 +56,5 @@ int main(int argc, string argv[])
 
     printf("ciphertext: %s\n", cipher);
 
-/*
 
-        for (int i = 0; i < strlen(input); i++)
-        {
-            if (isalpha(input[i]) && islower(input[i]))
-            {
-                input[i] = (((input[i] - 97) + key) % 26) + 97;
-            }
-            else if (isalpha(input[i]) && isupper(input[i]))
-            {
-                input[i] = (((input[i] - 65) + key) % 26) + 65;
-            }
-        }
-        printf("ciphertext: %s\n", input);
-
-*/
 }
