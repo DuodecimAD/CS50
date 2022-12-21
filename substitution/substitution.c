@@ -16,9 +16,10 @@ int main(int argc, string argv[])
     }
     else if (strlen(argv[1]) != 26 || !isalpha(argv[1]))
     {
-        printf("Key must contain 26 characters.\n");
+        printf("Key must contain 26 alphabetical characters.\n");
         return 1;
     }
+
 
     string input = get_string("plaintext: ");
 
