@@ -22,18 +22,21 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    string input = get_string("plaintext: ");
 
     char key[26];
+    string cipher;
 
     for (int j = 0; j < 26; j++)
     {
-        key[i] = toupper(argv[1][i]);
-        key[i] = toascii(key[i]);
+        key[j] = toupper(argv[1][j]);
+        key[j] = toascii(key[j]);
+        cipher[j] = toascii(input[j]);
     }
 
 
-    string input = get_string("plaintext: ");
-    int cipher = toascii(input);
+
+
     int a;
     for (int i = 0; i < 26; i++)
     {
