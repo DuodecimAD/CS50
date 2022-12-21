@@ -33,15 +33,14 @@ int main(int argc, string argv[])
         key[j] = toupper(argv[1][j]);
         key[j] = toascii(key[j]);
     }
-    for (int u = 0; u < input_length; u++)
-    {
-        cipher[u] = toascii(input[u]);
-    }
 
 
     int a;
-    for (int i = 0; i < 26; i++)
+
+    for (int i = 0; i < input_length; i++)
     {
+        cipher[i] = toascii(input[i]);
+
         if (isalpha(input[i]) && islower(input[i]))
         {
             a = (cipher[i] - 97) % 26;
