@@ -12,9 +12,9 @@ int main(int argc, string argv[])
 
 
 
-  //  string input = get_string("plaintext: ");
+    string input = get_string("plaintext: ");
 
-    printf("plaintext: %c", argv[1][0] + 50);
+  //  printf("plaintext: %c", argv[1][0]);
 
 
         int key = atoi(argv[1]);
