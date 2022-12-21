@@ -16,7 +16,7 @@ int main(int argc, string argv[])
 
     printf("plaintext: %c", argv[1][0] + 50);
 
-/*
+
         int key = atoi(argv[1]);
 
         for (int i = 0; i < strlen(input); i++)
@@ -31,6 +31,6 @@ int main(int argc, string argv[])
             }
         }
         printf("ciphertext: %s\n", input);
-*/
+
 
 }
