@@ -13,10 +13,11 @@ int main(int argc, string argv[])
 
 
 
-    string input = get_string("plaintext: ");
+  //  string input = get_string("plaintext: ");
 
-  //  printf("plaintext: %c", argv[1][0]);
+   printf("plaintext: %c", toascii(argv[1][0]));
 
+/*
 
         for (int i = 0; i < strlen(input); i++)
         {
@@ -31,5 +32,5 @@ int main(int argc, string argv[])
         }
         printf("ciphertext: %s\n", input);
 
-
+*/
 }
