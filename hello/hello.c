@@ -7,7 +7,11 @@
 int main(void)
 {
     char name[] = "antony";
-    name = toupper(name);
+
+    for (int i = 0; i<6; i++)
+    {
+    name[i] = toupper(name[i]);
+    }
 
 
     printf("%s\n", name);
