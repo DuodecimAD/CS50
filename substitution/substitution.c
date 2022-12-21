@@ -24,7 +24,7 @@ int main(int argc, string argv[])
 
     char key[26];
     int input_length = strlen(input);
-    char cipher[input_length + 1];
+    char cipher[input_length + 1] = {0};
 
     for (int j = 0; j < 26; j++)
     {
@@ -67,7 +67,7 @@ int main(int argc, string argv[])
     }
 
 
-    cipher[input_length] = '\0';
+ //   cipher[input_length] = '\0';
 
     printf("ciphertext: %s\n", cipher);
 
