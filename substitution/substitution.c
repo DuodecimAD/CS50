@@ -52,7 +52,9 @@ int main(int argc, string argv[])
             cipher[i] = key[a];
         }
     }
-    cipher[input_length + 1] = '\0';
+
+    int last = input_length + 1;
+    cipher[last] = '\0';
 
     printf("ciphertext: %s\n", cipher);
 
