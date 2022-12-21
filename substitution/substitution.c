@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <ctype.h>
 
+int toascii(int c);
+
 int main(int argc, string argv[])
 {
 
@@ -15,7 +17,7 @@ int main(int argc, string argv[])
 
   //  string input = get_string("plaintext: ");
 
-    int key = toascii(int argv[1][0]);
+    int key = toascii(argv[1][0]);
    printf("plaintext: %i", key);
 
 /*
