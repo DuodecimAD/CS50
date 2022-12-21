@@ -10,7 +10,11 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    printf("plaintext: %c", argv[1][0]);
+    
+
+    string input = get_string("plaintext: ");
+
+  //  printf("plaintext: %c", argv[1][0]);
 
 
     printf("ciphertext: %c", argv[1][0]);
