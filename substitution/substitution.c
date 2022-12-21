@@ -15,7 +15,8 @@ int main(int argc, string argv[])
 
   //  string input = get_string("plaintext: ");
 
-   printf("plaintext: %c", toascii(argv[1][0]));
+    int key = toascii(int argv[1][0]);
+   printf("plaintext: %i", key);
 
 /*
 
