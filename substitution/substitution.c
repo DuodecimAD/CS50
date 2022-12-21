@@ -9,14 +9,12 @@ int toascii(int c);
 int main(int argc, string argv[])
 {
 
-    string length = argv[1];
-
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
         return 1;
     }
-    else if (strlen(length) != 26)
+    else if (strlen(argv[1]) != 26 || !isalpha(argv[1]))
     {
         printf("Key must contain 26 characters.\n");
         return 1;
