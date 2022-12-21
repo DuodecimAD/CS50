@@ -14,7 +14,7 @@ int main(int argc, string argv[])
 
   //  string input = get_string("plaintext: ");
 
-    printf("plaintext: %c", argv[1][0] + 32);
+    printf("plaintext: %c", argv[1][0] + 50);
 
 /*
         int key = atoi(argv[1]);
