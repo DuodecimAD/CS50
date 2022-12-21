@@ -65,7 +65,8 @@ int main(int argc, string argv[])
                 cipher[i] = key[a];
             }
         }
-        else{
+        else if (!isalpha(argv[1][i]))
+        {
             printf("Key must contain 26 alphabetical characters.\n");
             return 1;
         }
