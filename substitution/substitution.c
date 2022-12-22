@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     }
     else if (strlen(argv[1]) != 26)
     {
-        for(int y = 0; y<strlen(argv[1]); y++)
+        for(int y = 0, z = y+1; y<strlen(argv[1]); y++)
         {
             if(!isalpha(argv[1][y])){
                 printf("Key must contain only alphabetical characters.\n");
