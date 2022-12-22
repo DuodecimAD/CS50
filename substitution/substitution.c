@@ -36,7 +36,7 @@ int main(int argc, string argv[])
          if (islower(argv[1][p]))
          {
             b = (argv[1][p] - 97) % 26;
-            duplicate[b]
+            duplicate[b] += 1;
          }
         else if (isupper(argv[1][p]))
         {
