@@ -28,6 +28,21 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    int duplicate[26] = {0};
+
+    for (int p = 0; p < 26; p++)
+    {
+         if (isalpha(input[i]) && islower(input[i]))
+         {
+            argv[1][p]
+         }
+        else if (isalpha(input[i]) && isupper(input[i]))
+        {
+            argv[1][p]
+        }
+
+    }
+
 
     string input = get_string("plaintext: ");
 
@@ -43,7 +58,6 @@ int main(int argc, string argv[])
 
 
     int a;
-    int duplicate[26] = {0};
 
     for (int i = 0; i < input_length; i++)
     {
@@ -61,7 +75,7 @@ int main(int argc, string argv[])
             {
                 cipher[i] = key[a] + 32;
             }
-            duplicate[a] = 1;
+
         }
         else if (isalpha(input[i]) && isupper(input[i]))
         {
@@ -74,9 +88,9 @@ int main(int argc, string argv[])
             {
                 cipher[i] = key[a];
             }
-            duplicate[a] = 1;
+
         }
-printf("%i\n", duplicate[i]);
+
     }
 
 
