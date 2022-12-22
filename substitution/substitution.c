@@ -30,15 +30,18 @@ int main(int argc, string argv[])
 
     int duplicate[26] = {0};
 
-    for (int p = 0; p < 26; p++)
+
+    for (int p = 0, b = 0; p < 26; p++)
     {
-         if (isalpha(input[i]) && islower(input[i]))
+         if (islower(argv[1][p]))
          {
-            argv[1][p]
+            b = (argv[1][p] - 97) % 26;
+            duplicate[b]
          }
-        else if (isalpha(input[i]) && isupper(input[i]))
+        else if (isupper(argv[1][p]))
         {
-            argv[1][p]
+            b = (argv[1][p] - 65) % 26;
+            duplicate[b]
         }
 
     }
