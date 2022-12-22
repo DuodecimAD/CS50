@@ -48,7 +48,7 @@ int main(int argc, string argv[])
 
 
 
-    for(int m = 0; m < 26; m++){
+    for (int m = 0; m < 26; m++){
         if(duplicate[m] == 0){
             printf("You have duplicate letters.\n");
         return 1;
