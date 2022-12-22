@@ -41,10 +41,18 @@ int main(int argc, string argv[])
         else if (isupper(argv[1][p]))
         {
             b = (argv[1][p] - 65) % 26;
-            duplicate[b]
+            duplicate[b] += 1;
         }
 
     }
+
+    int sum = 0;
+
+    for(int m = 0; m < 26; m++){
+        sum 
+    }
+
+    if()
 
 
     string input = get_string("plaintext: ");
