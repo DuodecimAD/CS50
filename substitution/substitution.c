@@ -46,15 +46,13 @@ int main(int argc, string argv[])
 
     }
 
-    int sum = 0;
+
 
     for(int m = 0; m < 26; m++){
-        sum += duplicate[m];
-    }
-
-    if(sum > 26){
-        printf("You have duplicate letters.\n");
+        if(duplicate[m] == 0){
+            printf("You have duplicate letters.\n");
         return 1;
+        }
     }
 
 
