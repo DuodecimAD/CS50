@@ -43,6 +43,7 @@ int main(int argc, string argv[])
 
 
     int a;
+    int duplicate[26] = {0};
 
     for (int i = 0; i < input_length; i++)
     {
@@ -54,12 +55,13 @@ int main(int argc, string argv[])
             if (islower(key[a]))
             {
                 cipher[i] = key[a];
+
             }
             else
             {
                 cipher[i] = key[a] + 32;
             }
-
+            duplicate[i] = a;
         }
         else if (isalpha(input[i]) && isupper(input[i]))
         {
@@ -72,9 +74,11 @@ int main(int argc, string argv[])
             {
                 cipher[i] = key[a];
             }
+            duplicate[i] = a;
         }
 
     }
+    if  (du)
 
 
     cipher[input_length] = '\0';
