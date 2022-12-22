@@ -8,7 +8,7 @@ int toascii(int c);
 
 int main(int argc, string argv[])
 {
-
+    //check if ./substitution + only 1 arg, if 26, if alphabetical
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
@@ -28,6 +28,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    // check for duplicate letters (part1), array of 0s, for each letter give 1
     int duplicate[26] = {0};
 
     for (int p = 0, b = 0; p < 26; p++)
@@ -45,6 +46,7 @@ int main(int argc, string argv[])
 
     }
 
+    // if a 0 still in array = duplicate
     for (int m = 0; m < 26; m++)
     {
         if (duplicate[m] == 0)
@@ -54,20 +56,22 @@ int main(int argc, string argv[])
         }
     }
 
+    // get input to transform
     string input = get_string("plaintext: ");
 
     char key[26];
     int input_length = strlen(input);
     char cipher[input_length + 1];
 
+    // transform letters in key in ascii numbers
     for (int j = 0; j < 26; j++)
     {
         key[j] = toupper(argv[1][j]);
         key[j] = toascii(key[j]);
     }
 
+    // for each letter in input transoform to letter from key
     int a;
-
     for (int i = 0; i < input_length; i++)
     {
         cipher[i] = toascii(input[i]);
@@ -98,11 +102,9 @@ int main(int argc, string argv[])
         }
     }
 
-
-
+    // give last bit a null to finish the string, could have use {0},
+    // but i let it like this as example and to remember if i need one day
     cipher[input_length] = '\0';
 
     printf("ciphertext: %s\n", cipher);
-
-
 }
