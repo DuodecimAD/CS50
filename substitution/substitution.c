@@ -16,13 +16,13 @@ int main(int argc, string argv[])
     }
     else if (strlen(argv[1]) != 26)
     {
-        for(int y = 0; y<strlen(argv[1]); y++)
+        for (int y = 0; y < strlen(argv[1]); y++)
         {
-            if(!isalpha(argv[1][y])){
+            if (!isalpha(argv[1][y]))
+            {
                 printf("Key must contain only alphabetical characters.\n");
                 return 1;
             }
-
         }
         printf("Key must contain 26 characters.\n");
         return 1;
@@ -30,14 +30,13 @@ int main(int argc, string argv[])
 
     int duplicate[26] = {0};
 
-
     for (int p = 0, b = 0; p < 26; p++)
     {
-         if (islower(argv[1][p]))
-         {
+        if (islower(argv[1][p]))
+        {
             b = (argv[1][p] - 97) % 26;
             duplicate[b] += 1;
-         }
+        }
         else if (isupper(argv[1][p]))
         {
             b = (argv[1][p] - 65) % 26;
@@ -46,15 +45,14 @@ int main(int argc, string argv[])
 
     }
 
-
-
-    for (int m = 0; m < 26; m++){
-        if(duplicate[m] == 0){
+    for (int m = 0; m < 26; m++)
+    {
+        if (duplicate[m] == 0)
+        {
             printf("You have duplicate letters.\n");
-        return 1;
+            return 1;
         }
     }
-
 
     string input = get_string("plaintext: ");
 
@@ -68,7 +66,6 @@ int main(int argc, string argv[])
         key[j] = toascii(key[j]);
     }
 
-
     int a;
 
     for (int i = 0; i < input_length; i++)
@@ -81,13 +78,11 @@ int main(int argc, string argv[])
             if (islower(key[a]))
             {
                 cipher[i] = key[a];
-
             }
             else
             {
                 cipher[i] = key[a] + 32;
             }
-
         }
         else if (isalpha(input[i]) && isupper(input[i]))
         {
@@ -100,9 +95,7 @@ int main(int argc, string argv[])
             {
                 cipher[i] = key[a];
             }
-
         }
-
     }
 
 
