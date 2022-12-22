@@ -61,7 +61,7 @@ int main(int argc, string argv[])
             {
                 cipher[i] = key[a] + 32;
             }
-            duplicate[i] = a;
+            duplicate[a] = 1;
         }
         else if (isalpha(input[i]) && isupper(input[i]))
         {
@@ -74,11 +74,11 @@ int main(int argc, string argv[])
             {
                 cipher[i] = key[a];
             }
-            duplicate[i] = a;
+            duplicate[a] = 1;
         }
-
+printf("%i\n", duplicate[i]);
     }
-    if  (du)
+
 
 
     cipher[input_length] = '\0';
