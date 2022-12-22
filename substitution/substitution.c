@@ -49,10 +49,13 @@ int main(int argc, string argv[])
     int sum = 0;
 
     for(int m = 0; m < 26; m++){
-        sum 
+        sum += duplicate[m];
     }
 
-    if()
+    if(sum > 26){
+        printf("You have duplicate letters.\n");
+        return 1;
+    }
 
 
     string input = get_string("plaintext: ");
