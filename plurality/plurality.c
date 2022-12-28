@@ -86,12 +86,12 @@ void print_winner(void)
 
     for (int i = candidate_count; i > 0 ; i--)
     {
-
-        if (candidates[i].votes >= checkbest)
-        {
-            checkbest = candidates[i].votes;
-            printf("%s\n", candidates[i].name);
-        }
+       
+            if (candidates[i].votes >= checkbest)
+            {
+                checkbest = candidates[i].votes;
+                printf("%s\n", candidates[i].name);
+            }
 
     }
 
