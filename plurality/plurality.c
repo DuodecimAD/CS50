@@ -85,9 +85,8 @@ void print_winner(void)
     int checkbest = 0;
     int temp = 0;
 
-    for (int i = 0; i < candidate_count ; i++)
+    for (int i = candidate_count; i > 0  ; i--)
     {
-        temp = candidates[i].votes;
 
             if (candidates[i].votes >= checkbest)
             {
