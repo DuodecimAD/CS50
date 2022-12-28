@@ -18,7 +18,7 @@ candidate;
 candidate candidates[MAX];
 
 // Number of candidates
-int candidate_count;
+int candidate_count, voter_count;
 
 // Function prototypes
 bool vote(string name);
@@ -46,7 +46,7 @@ int main(int argc, string argv[])
         candidates[i].votes = 0;
     }
 
-    int voter_count = get_int("Number of voters: ");
+    voter_count = get_int("Number of voters: ");
 
     // Loop over all voters
     for (int i = 0; i < voter_count; i++)
@@ -82,18 +82,15 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    int checkbest = 0;
-    int temp = 0;
+
+    int temp = voter_count;
 
     for (int i = candidate_count; i > 0  ; i--)
     {
-
-            if (candidates[i].votes >= checkbest)
+            if (candidates[i].votes >= candidate_count)
             {
-                checkbest = candidates[i].votes;
                 printf("%s\n", candidates[i].name);
             }
-
     }
 
 }
