@@ -84,7 +84,7 @@ void print_winner(void)
 {
     int best = 0;
 
-    for (int i = 0, checkbest = 0; i < candidate_count; i++)
+    for (int i = candidate_count, checkbest = 0; i > 0 ; i--)
     {
 
         if (candidates[i].votes >= checkbest)
