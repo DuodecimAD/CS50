@@ -83,10 +83,11 @@ bool vote(string name)
 void print_winner(void)
 {
     int checkbest = 0;
+    int temp = 0;
 
     for (int i = 0; i < candidate_count ; i++)
     {
-        candidates[i].votes
+        temp = candidates[i].votes;
 
             if (candidates[i].votes >= checkbest)
             {
