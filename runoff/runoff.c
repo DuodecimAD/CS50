@@ -194,7 +194,7 @@ bool print_winner(void)
 
     if (candidate_count % 2 == 1)
     {
-        if (temp > ((candidate_count / 2) + 1))
+        if (temp >= ((candidate_count / 2) + 1))
         {
             printf("%i is more than 50%% of %i\n", temp, candidate_count);
             return true;
