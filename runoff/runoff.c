@@ -157,8 +157,6 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
 
-string rank2;
-
     for (int i = 0; i < candidate_count; i++)
     {
         for (int k = 0; k < voter_count; k++)
@@ -182,12 +180,7 @@ string rank2;
         }
     }
 
-    for (int z = 0; z < candidate_count; z++)
-    {
-        printf("%s %i\n",candidates[z].name,candidates[z].votes);
-    }
-
-    return;
+   return;
 }
 
 // Print the winner of the election, if there is one
@@ -208,7 +201,7 @@ bool print_winner(void)
     {
         if (temp >= ((voter_count / 2) + 1))
         {
-            printf("%i is more than 50%% of %i\n", temp, voter_count);
+
         }
         else
         {
@@ -219,7 +212,7 @@ bool print_winner(void)
     {
         if (temp > (voter_count / 2))
         {
-            printf("%i is more than 50%% of %i\n", temp, voter_count);
+
         }
         else
         {
@@ -231,7 +224,7 @@ bool print_winner(void)
     {
         if (candidates[i].votes == temp)
         {
-            printf("%s is the winner\n", candidates[i].name);
+            printf("%s\n", candidates[i].name);
         }
     }
 
