@@ -163,7 +163,7 @@ void tabulate(void)
         {
             for (o = 1; o < candidate_count; o++)
             {
-                if (candidates[x].eliminated == false && strcmp(preferences[i][0],candidates[x].name) == 0)
+                if (candidates[x].eliminated == false && strcmp(preferences[i][o],candidates[x].name) == 0)
                 {
                     candidates[x].votes++;
                 }
