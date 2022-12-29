@@ -128,10 +128,7 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    for(int i = voter; i<voter_count; i++)
-    {
-        for (int j = rank; j < MAX_CANDIDATES)
-    }
+    voter
     return false;
 }
 
