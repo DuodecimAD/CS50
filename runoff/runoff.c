@@ -167,7 +167,7 @@ void tabulate(void)
             {
                 for (int g = 0; g < candidate_count; g++)
                 {
-                    cand =strcmp(preferences[k][0],candidates[i].name) == 0 &&
+                    cand = preferences[k][0]
 
                     if(candidates[i].eliminated == true)
                     {
