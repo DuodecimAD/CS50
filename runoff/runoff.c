@@ -157,7 +157,7 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
 
-string 
+string rank2;
 
     for (int i = 0; i < candidate_count; i++)
     {
@@ -168,20 +168,9 @@ string
                 candidates[i].votes++;
                 printf("%s +1\n", candidates[i].name);
             }
-        }
-    }
-
-    for (int i = 0; i < candidate_count; i++)
-    {
-        for (int k = 0; k < voter_count; k++)
-        {
-            if (strcmp(preferences[k][0],candidates[i].name) == 0 && candidates[i].eliminated == true)
+            else if (strcmp(preferences[k][0],candidates[i].name) == 0 && candidates[i].eliminated == true)
             {
-                if(strcmp(preferences[k][1],candidates[i].name) == 0)
-                {
-                    candidates[i].votes++;
-                    printf("%s +1\n", candidates[i].name);
-                }
+                preference[k][1]
             }
         }
     }
