@@ -175,21 +175,16 @@ void tabulate(void)
         }
         else
         {
-            if (strcmp(preferences[k][1],candidates[i].name) == 0)
+            for (int k = 0; k < voter_count; k++)
+            {
+                if (strcmp(preferences[k][1],candidates[i].name) == 0)
                 {
                     candidates[i].votes++;
                     printf("%s +1\n", candidates[i].name);
                 }
-        }
-  /**     else {
-            for (int k = 0; k < voter_count; k++)
-            {
-                if (strcmp(preferences[k][1],candidates[i].name))
-                {
-                    candidates[i].votes++;
-                }
             }
-        }*/
+        }
+
 
     }
 
