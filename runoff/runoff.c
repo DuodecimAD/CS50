@@ -170,9 +170,13 @@ string rank2;
             }
             else if (strcmp(preferences[k][0],candidates[i].name) == 0 && candidates[i].eliminated == true)
             {
-                for(z=0; z < candidate_count; z++)
+                for(z = 0; z < candidate_count; z++)
                 {
-                    preferences[k][1]
+                    if (strcmp(preferences[k][1],candidates[z].name) == 0)
+                    {
+                        candidates[z].votes++;
+                        break;
+                    }
                 }
             }
         }
