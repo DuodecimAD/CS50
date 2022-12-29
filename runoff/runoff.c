@@ -160,11 +160,8 @@ void tabulate(void)
         if (strcasecmp(candidates[i].name, name) == 0)
         {
             candidates[i].votes++;
-            return true;
         }
-
     }
-    return false;
     return;
 }
 
