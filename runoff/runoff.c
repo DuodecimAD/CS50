@@ -162,8 +162,8 @@ void tabulate(void)
 
         for (int x = 0; x < candidate_count; x++)
         {
-            if()
-            if (strcasecmp(preferences[i][pref],candidates[x].name) == 0)
+
+            if (candidates[x].eliminated == false && strcasecmp(preferences[i][pref],candidates[x].name) == 0)
             {
                 candidates[x].votes++;
             }
