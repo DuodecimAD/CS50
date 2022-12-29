@@ -79,12 +79,13 @@ int main(int argc, string argv[])
             }
         }
 
- for (int i = 0; i < voter_count; i++)
+ for (int w = 0; w < voter_count; w++)
 {
-for (int j = 0; j < candidate_count; j++)
+for (int x = 0; x < candidate_count; x++)
 {
-printf("%i %s\n", i, preferences[i][j] );
+printf("%i.%s\t", w, preferences[w][x]);
 }
+printf("\n");
 }
         printf("\n");
     }
