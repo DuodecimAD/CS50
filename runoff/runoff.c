@@ -177,9 +177,11 @@ void tabulate(void)
         {
             if (strcmp(preferences[k][0],candidates[i].name) == 0 && candidates[i].eliminated == true)
             {
-                strcmp(preferences[k][1],candidates[i].name) == 0
-                candidates[i].votes++;
-                printf("%s +1\n", candidates[i].name);
+                if(strcmp(preferences[k][1],candidates[i].name) == 0)
+                {
+                    candidates[i].votes++;
+                    printf("%s +1\n", candidates[i].name);
+                }
             }
         }
     }
