@@ -136,7 +136,7 @@ printf("\n");
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    if()
+    if(strcmp(name,canditates[]))
     preferences[voter][rank] = name;
     return true;
 }
