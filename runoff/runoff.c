@@ -197,17 +197,22 @@ bool print_winner(void)
         if (temp >= ((candidate_count / 2) + 1))
         {
             printf("%i is more than 50%% of %i\n", temp, candidate_count);
-            return true;
+        }
+        else
+        {
+            return false;
         }
     }
-    else if (temp > (candidate_count / 2))
+    else
     {
+        if (temp > (candidate_count / 2))
+        {
             printf("%i is more than 50%% of %i\n", temp, candidate_count);
-            return true;
-
-    }
-    else {
-        return false;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     for (int i = 0; i < candidate_count  ; i++)
