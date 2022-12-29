@@ -165,9 +165,9 @@ void tabulate(void)
             {
                 if (candidates[x].eliminated == false && strcmp(preferences[i][o],candidates[x].name) == 0)
                 {
-                    if (candidates[x].eliminated == true)
+                    if ()
                     {
-                        
+
                     }
                     else
                     {
