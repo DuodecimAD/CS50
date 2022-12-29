@@ -24,6 +24,7 @@ candidate candidates[MAX_CANDIDATES];
 // Numbers of voters and candidates
 int voter_count;
 int candidate_count;
+int pref = 0;
 
 // Function prototypes
 bool vote(int voter, int rank, string name);
@@ -155,7 +156,7 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    int pref = 0;
+
 
     for (int i = 0; i < voter_count; i++)
     {
