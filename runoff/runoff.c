@@ -210,11 +210,11 @@ bool print_winner(void)
         }
     }
 
-    if (candidate_count % 2 == 1)
+    if (voter_count % 2 == 1)
     {
-        if (temp >= ((candidate_count / 2) + 1))
+        if (temp >= ((voter_count / 2) + 1))
         {
-            printf("%i is more than 50%% of %i\n", temp, candidate_count);
+            printf("%i is more than 50%% of %i\n", temp, voter_count);
         }
         else
         {
@@ -223,9 +223,9 @@ bool print_winner(void)
     }
     else
     {
-        if (temp > (candidate_count / 2))
+        if (temp > (voter_count / 2))
         {
-            printf("%i is more than 50%% of %i\n", temp, candidate_count);
+            printf("%i is more than 50%% of %i\n", temp, voter_count);
         }
         else
         {
