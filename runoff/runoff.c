@@ -164,15 +164,7 @@ int counter = 0;
         {
             if (candidates[x].eliminated == false && strcmp(preferences[i][counter],candidates[x].name) == 0)
             {
-                if ()
-                {
-
-                }
-                else
-                {
-                    candidates[x].votes++;
-                    break;
-                }
+                candidates[x].votes++;
             }
         }
     }
