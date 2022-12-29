@@ -162,10 +162,15 @@ int counter = 0;
     {
         for (int x = 0; x < candidate_count; x++)
         {
-            if (candidates[x].eliminated == false && strcmp(preferences[i][counter],candidates[x].name) == 0)
+            if (candidates[x].eliminated == false)
             {
-                candidates[x].votes++;
+                if(strcmp(preferences[i][counter],candidates[x].name) == 0)
+                {
+                    candidates[x].votes++;
+                }
+
             }
+
         }
     }
      for (int z = 0; z < candidate_count; z++)
