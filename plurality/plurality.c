@@ -90,8 +90,9 @@ void print_winner(void)
 
          if (candidates[i].votes > temp)
          {
-
+              temp = candidates[i].votes;
          }
+         
     }
 
         if (candidates[i].votes >= j)
