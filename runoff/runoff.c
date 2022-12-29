@@ -84,7 +84,7 @@ int main(int argc, string argv[])
 {
 for (int x = 0; x < candidate_count; x++)
 {
-printf("%i %s\t", x, preferences[w][x]);
+printf("%i %s\t\t", x, preferences[w][x]);
 }
 printf("\n");
 }
