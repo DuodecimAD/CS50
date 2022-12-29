@@ -24,6 +24,7 @@ candidate candidates[MAX_CANDIDATES];
 // Numbers of voters and candidates
 int voter_count;
 int candidate_count;
+int counter;
 
 // Function prototypes
 bool vote(int voter, int rank, string name);
@@ -139,7 +140,7 @@ bool vote(int voter, int rank, string name)
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        if(strcmp(name,candidates[i].name) == 0)
+        if (strcmp(name,candidates[i].name) == 0)
         {
             preferences[voter][rank] = name;
 
@@ -156,13 +157,15 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
 
-    for (int i = 0, counter = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
-        if (strcasecmp(preferences[i],candidates[i].name) == 0)
+        if (strcasecmp(preferences[counter],candidates[i].name) == 0)
         {
-            candidates[i].votes++;
+            candidates[j].votes++;
         }
+
     }
+    counter++;
     return;
 }
 
