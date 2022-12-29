@@ -128,7 +128,7 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    voter
+    preferences[voter][rank];
     return false;
 }
 
