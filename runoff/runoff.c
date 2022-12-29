@@ -161,13 +161,15 @@ void tabulate(void)
     {
         for (int x = 0; x < candidate_count; x++)
         {
-            if (candidates[x].eliminated == false && strcmp(preferences[i][0],candidates[x].name) == 0)
+            for (o = 1; o < candidate_count; o++)
             {
-                candidates[x].votes++;
-            }
-            else if (candidates[x].eliminated == true){
-                for (o = 1; o < candidate_count; o++)
+                if (candidates[x].eliminated == false && strcmp(preferences[i][0],candidates[x].name) == 0)
                 {
+                    candidates[x].votes++;
+                }
+                else if (candidates[x].eliminated == true)
+                {
+
                     if (candidates[x].eliminated == false && strcmp(preferences[i][o],candidates[x].name) == 0)
                     {
                         candidates[o].votes++;
