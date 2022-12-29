@@ -157,6 +157,7 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
     int pref = 0;
+    string cand;
 
     for (int i = 0; i < candidate_count; i++)
     {
@@ -166,8 +167,9 @@ void tabulate(void)
             {
                 for (int g = 0; g < candidate_count; g++)
                 {
+                    cand =strcmp(preferences[k][0],candidates[i].name) == 0 &&
 
-                    if(strcmp(preferences[k][0],candidates[i].name) == 0 && candidates[i].eliminated == false)
+                    if(candidates[i].eliminated == true)
                     {
                         candidates[i].votes++;
                     }
