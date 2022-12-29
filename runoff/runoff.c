@@ -168,8 +168,17 @@ void tabulate(void)
                 if (strcmp(preferences[k][0],candidates[i].name) == 0)
                 {
                     candidates[i].votes++;
+                    printf("%s +1", candidates[i].name);
+                }
+                else
+                {
+                     printf("%s n'est pas egal à %s", candidates[i].name, preferences[k][0]);
                 }
             }
+        }
+        else
+        {
+            printf("%s est éliminé", candidates[i].name);
         }
   /**     else {
             for (int k = 0; k < voter_count; k++)
@@ -260,14 +269,18 @@ bool is_tie(int min)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if (!(candidates[i].votes > min))
+        if (candidates[i].votes > min)
+        {
+            printf("they aren't tied");
+            return false;
+        }
+        else
         {
             printf("they ARE tied");
             return true;
         }
     }
-    printf("they aren't tied");
-    return false;
+
 }
 
 // Eliminate the candidate (or candidates) in last place
