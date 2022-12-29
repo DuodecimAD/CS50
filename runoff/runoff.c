@@ -163,13 +163,17 @@ void tabulate(void)
         for (int x = 0; x < candidate_count; x++)
         {
 
-            if (candidates[x].eliminated == false && strcasecmp(preferences[i][pref],candidates[x].name) == 0)
+            if (candidates[x].eliminated == false && strcmp(preferences[i][pref],candidates[x].name) == 0)
             {
                 candidates[x].votes++;
             }
         }
 
     }
+     for (int z = 0; z < candidate_count; z++)
+     {
+        printf("%s %i\n",candidates[z].name,candidates[z].votes);
+     }
 
     return;
 }
