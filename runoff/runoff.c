@@ -247,13 +247,13 @@ int find_min(void)
             printf("%s is eliminated\n", candidates[i].name);
         }
     }
-    return 0;
+    return min;
 }
 
 // Return true if the election is tied between all candidates, false otherwise
 bool is_tie(int min)
 {
-    
+
     return false;
 }
 
