@@ -168,7 +168,7 @@ void tabulate(void)
                 for (int g = 0; g < candidate_count; g++)
                 {
 
-                    if (strcmp(preferences[k][g],candidates[i].name == 0))
+                    if (strcmp(preferences[k][pref],candidates[g].name == 0))
                     {
                         pref = g;
                     }
