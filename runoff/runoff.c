@@ -274,13 +274,9 @@ bool is_tie(int min)
             printf("they aren't tied");
             return false;
         }
-        else
-        {
-            printf("they ARE tied");
-            return true;
-        }
     }
-
+ printf("they ARE tied");
+        return true;
 }
 
 // Eliminate the candidate (or candidates) in last place
