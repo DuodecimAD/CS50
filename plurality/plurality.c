@@ -83,7 +83,7 @@ bool vote(string name)
 void print_winner(void)
 {
 
-    int temp = voter_count;
+    int temp;
 
     for (int i = candidate_count; i > 0  ; i--)
     {
