@@ -171,7 +171,7 @@ void tabulate(void)
                 }
             }
         }
-        else {
+  /**     else {
             for (int k = 0; k < voter_count; k++)
             {
                 if (strcmp(preferences[k][1],candidates[i].name))
@@ -179,7 +179,7 @@ void tabulate(void)
                     candidates[i].votes++;
                 }
             }
-        }
+        }*/
 
     }
 
