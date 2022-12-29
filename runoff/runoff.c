@@ -6,7 +6,7 @@
 #define MAX_CANDIDATES 9
 
 // preferences[i][j] is jth preference for voter i
-string preferences[MAX_VOTERS][MAX_CANDIDATES];
+string preferences[MAX_VOTERS][MAX_CANDIDATES];     //changed from int
 
 // Candidates have name, vote count, eliminated status
 typedef struct
@@ -83,7 +83,7 @@ int main(int argc, string argv[])
 {
 for (int x = 0; x < candidate_count; x++)
 {
-printf("%i %d\t", w, preferences[w][x]);
+printf("%i %s\t", w, preferences[w][x]);
 }
 printf("\n");
 }
