@@ -167,7 +167,7 @@ void tabulate(void)
                 candidates[x].votes++;
             }
             else if (candidates[x].eliminated == true){
-                
+                for (p = 0; p < )
             }
         }
     }
