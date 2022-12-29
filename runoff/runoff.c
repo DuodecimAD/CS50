@@ -274,5 +274,6 @@ void eliminate(int min)
             printf("%s is eliminated\n", candidates[i].name);
         }
     }
+    
     return;
 }
