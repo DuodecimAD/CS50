@@ -253,9 +253,9 @@ bool is_tie(int min)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if (!candidates[i].votes > min)
+        if (candidates[i].votes !> min)
         {
-            printf("they ARE tied",);
+            printf("they ARE tied");
             return true;
         }
     }
@@ -274,6 +274,6 @@ void eliminate(int min)
             printf("%s is eliminated\n", candidates[i].name);
         }
     }
-    
+
     return;
 }
