@@ -144,10 +144,10 @@ bool vote(int voter, int rank, string name)
         {
             preferences[voter][rank] = name;
 
-            break;
+            return true;
         }
     }
-    return 0;
+    return false;
 
 
 
