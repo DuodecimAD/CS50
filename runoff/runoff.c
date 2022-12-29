@@ -173,7 +173,7 @@ void tabulate(void)
             }
 
         }
-        
+
     }
 
      for (int z = 0; z < candidate_count; z++)
@@ -244,7 +244,7 @@ int find_min(void)
             min = candidates[i].votes;
         }
     }
-
+    printf("min is %i",min);
     return min;
 }
 
