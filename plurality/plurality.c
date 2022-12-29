@@ -87,13 +87,13 @@ void print_winner(void)
 
     for (int i = 0; i < candidate_count  ; i++)
     {
-         if (candidates[i].votes > temp)
-         {
-              temp = candidates[i].votes;
-         }
+        if (candidates[i].votes > temp)
+        {
+            temp = candidates[i].votes;
+        }
     }
 
-     for (int i = 0; i < candidate_count  ; i++)
+    for (int i = 0; i < candidate_count  ; i++)
     {
         if (candidates[i].votes == temp)
         {
