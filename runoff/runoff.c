@@ -181,7 +181,9 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    // TODO
+    
+    printf("todo \n");
+    return 1;
     return false;
 }
 
