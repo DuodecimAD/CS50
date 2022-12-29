@@ -192,7 +192,20 @@ bool print_winner(void)
         }
     }
 
-    if(temp >= candidate_count/2)
+    if (candidate_count % 2 == 1)
+    {
+        if (temp > candidate_count + 1)
+        {
+            return true;
+        }
+    }
+    else
+    {
+        if (temp > candidate_count)
+        {
+            return true;
+        }
+    }
 
     for (int i = 0; i < candidate_count  ; i++)
     {
