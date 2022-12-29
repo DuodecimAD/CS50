@@ -158,11 +158,14 @@ void tabulate(void)
 
     for (int i = 0; i < candidate_count; i++)
     {
-         for (int i = 0; i < candidate_count; i++)
+         for (int j = 0; j < candidate_count; j++)
         {
-            if (strcasecmp(preferences[i],candidates[j].name) == 0)
+            for (int x = 0; x < candidate_count; x++)
             {
-                candidates[j].votes++;
+                if (strcasecmp(preferences[i][j],candidates[x].name) == 0)
+                {
+                    candidates[j].votes++;
+                }
             }
         }
     }
