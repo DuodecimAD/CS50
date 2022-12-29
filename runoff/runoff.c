@@ -169,7 +169,9 @@ void tabulate(void)
                 }
                 else
                 {
-                    for
+                    if (candidates[x].eliminated == true){
+                        
+                    }
                 }
 
             }
