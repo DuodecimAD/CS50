@@ -196,11 +196,15 @@ bool print_winner(void)
     {
         if (temp > ((candidate_count / 2) + 1))
         {
+            printf("%i is more than 50%% of %i\n", temp, candidate_count);
             return true;
         }
     }
-    else if (temp > (candidate_count / 2))
+    else
+    {
+        if (temp > (candidate_count / 2))
         {
+            printf("%i is more than 50%% of %i\n", temp, candidate_count);
             return true;
         }
     }
@@ -209,7 +213,7 @@ bool print_winner(void)
     {
         if (candidates[i].votes == temp)
         {
-            printf("%s\n", candidates[i].name);
+            printf("%s is the winner\n", candidates[i].name);
         }
     }
 
