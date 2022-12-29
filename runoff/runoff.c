@@ -166,9 +166,12 @@ void tabulate(void)
                 candidates[x].votes++;
             }
             else if (candidates[x].eliminated == true){
-                for (o = 0; o < candidate_count; o++)
+                for (o = 1; o < candidate_count; o++)
                 {
-                    if (strcmp(preferences[i][o],candidates[x].name) == 0)
+                    if (candidates[x].eliminated == false && strcmp(preferences[i][o],candidates[x].name) == 0)
+                    {
+                        candidates[o].votes++;
+                    }
                 }
             }
         }
