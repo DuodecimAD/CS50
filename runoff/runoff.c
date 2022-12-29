@@ -77,9 +77,15 @@ int main(int argc, string argv[])
                 printf("Invalid vote.\n");
                 return 4;
             }
-            printf("%i %s\n", i, preferences[i][j] )
         }
 
+ for (int i = 0; i < voter_count; i++)
+{
+for (int j = 0; j < candidate_count; j++)
+{
+printf("%i %s\n", i, preferences[i][j] );
+}
+}
         printf("\n");
     }
 
