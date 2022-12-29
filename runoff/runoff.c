@@ -84,7 +84,7 @@ int main(int argc, string argv[])
 {
 for (int x = 0; x < candidate_count; x++)
 {
-printf("%i %s\t", w, preferences[w][x]);
+printf("%i %s\t", x, preferences[w][x]);
 }
 printf("\n");
 }
@@ -142,7 +142,7 @@ bool vote(int voter, int rank, string name)
         if(strcmp(name,candidates[i].name) == 0)
         {
             preferences[voter][rank] = name;
-            
+
             return true;
         }
     }
