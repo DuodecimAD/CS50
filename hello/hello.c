@@ -6,13 +6,8 @@
 
 int main(void)
 {
-    char name[] = "antony";
 
-    for (int i = 0; i<6; i++)
-    {
-    name[i] = toupper(name[i]);
-    }
+    int name = 5/2;
 
-
-    printf("%s\n", name);
+    printf("%i\n", name);
 }
