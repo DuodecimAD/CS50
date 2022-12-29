@@ -160,28 +160,29 @@ void tabulate(void)
     for (int i = 0; i < voter_count; i++)
     {
         if (candidates[i].eliminated == false)
+        {
+            for (int k = 0; k < voter_count; k++)
             {
-                if(strcmp(preferences[i][0],candidates[x].name) == 0)
+                for (int x = 0; x < candidate_count; x++)
                 {
-                    candidates[x].votes++;
-                }
-                else
-                {
-                    if (candidates[x].eliminated == true){
-
+                    if(strcmp(preferences[k][0],candidates[i].name) == 0)
+                    {
+                        candidates[i].votes++;
+                    }
+                    else{
+                        
                     }
                 }
 
             }
-    }
-    for (int i = 0; i < voter_count; i++)
-    {
-        for (int x = 0; x < candidate_count; x++)
-        {
 
+        }
+        else
+        {
 
         }
     }
+
      for (int z = 0; z < candidate_count; z++)
      {
         printf("%s %i\n",candidates[z].name,candidates[z].votes);
