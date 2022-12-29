@@ -136,8 +136,9 @@ printf("\n");
 bool vote(int voter, int rank, string name)
 {
     // TODO
+    if()
     preferences[voter][rank] = name;
-    return false;
+    return true;
 }
 
 // Tabulate votes for non-eliminated candidates
