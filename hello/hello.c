@@ -6,8 +6,10 @@
 
 int main(void)
 {
+    int name = 8;
 
-    int name = 5/2;
 
-    printf("%i\n", name);
+
+
+    printf("%i\n", name % 2);
 }
