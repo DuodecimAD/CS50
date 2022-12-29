@@ -253,13 +253,13 @@ bool is_tie(int min)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].votes !> min)
+        if (!(candidates[i].votes > min))
         {
             printf("they ARE tied");
             return true;
         }
     }
-    printf("they aren't tied",);
+    printf("they aren't tied");
     return false;
 }
 
