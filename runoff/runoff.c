@@ -158,18 +158,18 @@ void tabulate(void)
 {
     for (int i = 0; i < voter_count; i++)
     {
-        for (int k = 0, rank = 0; k < candidate_count; k++)
+        for (int j = 0, rank = 0; j < candidate_count; j++)
         {
-            rank = preferences[i][k];
+            rank = preferences[i][j];
             if (candidates[rank].eliminated == false)
             {
-                candidates[k].votes++;
-                printf("%s +1\n", candidates[k].name);
+                candidates[j].votes++;
+                printf("%s +1\n", candidates[j].name);
                 break;
             }
         }
     }
-}
+
 
    return;
 }
