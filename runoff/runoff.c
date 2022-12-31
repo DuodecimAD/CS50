@@ -85,7 +85,7 @@ int main(int argc, string argv[])
 {
 for (int x = 0; x < candidate_count; x++)
 {
-printf("%i %s\t\t", x, preferences[w][x]);
+printf("%i %d\t\t", x, preferences[w][x]);
 }
 printf("\n");
 }
@@ -158,13 +158,14 @@ void tabulate(void)
 {
     for (int i = 0; i < voter_count; i++)
     {
-        for (int k = 0, int rank = 0; k < candidate_count; k++)
+        for (int k = 0, rank = 0; k < candidate_count; k++)
         {
             rank = preferences[i][k];
             if (candidates[rank].eliminated == false)
             {
                 candidates[k].votes++;
                 printf("%s +1\n", candidates[k].name);
+                break;
             }
         }
     }
