@@ -5,6 +5,11 @@ int main(void)
 {
     int floors = get_int("Height : ");
 
+    while (height < 1 || height > 8)
+    {
+        height = get_int("Height :");
+    }
+
     for (int i = 0; i < floors; i++)
     {
         for (int b = floors-i; b > 1; b--)
