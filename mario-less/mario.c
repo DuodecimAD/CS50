@@ -7,7 +7,10 @@ int main(void)
 
     for (int i = 0; i < floors; i++)
     {
-        for ()
+        for (int b = floors; b < 1; b--)
+        {
+            
+        }
         for (int j = 0; j < i + 1; j++)
         {
             printf("#");
