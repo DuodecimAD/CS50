@@ -3,11 +3,11 @@
 
 int main(void)
 {
-    int floors = get_int("Height : ");
+    int floors = 0;
 
-    while (height < 1 || height > 8)
+    while (floors < 1 || floors > 8)
     {
-        height = get_int("Height : ");
+        floors = get_int("Height : ");
     }
 
     for (int i = 0; i < floors; i++)
