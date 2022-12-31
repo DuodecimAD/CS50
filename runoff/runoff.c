@@ -80,15 +80,6 @@ int main(int argc, string argv[])
                 return 4;
             }
         }
-
- for (int w = 0; w < voter_count; w++)
-{
-for (int x = 0; x < candidate_count; x++)
-{
-printf("%i %d\t\t", x, preferences[w][x]);
-}
-printf("\n");
-}
         printf("\n");
     }
 
@@ -140,7 +131,7 @@ bool vote(int voter, int rank, string name)
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        if (strcmp(name,candidates[i].name) == 0)
+        if (strcmp(name, candidates[i].name) == 0)
         {
             preferences[voter][rank] = i;
 
@@ -170,7 +161,7 @@ void tabulate(void)
     }
 
 
-   return;
+    return;
 }
 
 // Print the winner of the election, if there is one
