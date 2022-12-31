@@ -7,7 +7,7 @@ int main(void)
 
     while (height < 1 || height > 8)
     {
-        height = get_int("Height :");
+        height = get_int("Height : ");
     }
 
     for (int i = 0; i < floors; i++)
