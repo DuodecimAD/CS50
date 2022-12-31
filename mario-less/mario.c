@@ -9,7 +9,7 @@ int main(void)
     {
         for (int b = floors; b < 1; b--)
         {
-            
+            printf(" ");
         }
         for (int j = 0; j < i + 1; j++)
         {
