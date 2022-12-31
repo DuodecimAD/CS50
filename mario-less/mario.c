@@ -12,7 +12,7 @@ int main(void)
 
     for (int i = 0; i < floors; i++)
     {
-        for (int b = floors-i; b > 1; b--)
+        for (int b = floors - i; b > 1; b--)
         {
             printf(" ");
         }
